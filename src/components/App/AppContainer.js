@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
+import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 
 class AppContainer extends Component {
@@ -15,7 +16,8 @@ class AppContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="App">
+                <Header/>
                 <Menu/>
                 {this.props.children}
             </div>
