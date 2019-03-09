@@ -1,0 +1,19 @@
+.Header {
+    background-color: #282c34;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header .Header-image {
+    height: 20vmin;
+}
+
+.Header .Header-text {
+    font-family: "Srisakdi", cursive;
+    font-style: italic;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
