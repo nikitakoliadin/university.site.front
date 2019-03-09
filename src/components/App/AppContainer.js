@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 import Header from '../Header/Header';
-import Menu from '../Menu/Menu';
+import Content from '../Content/Content';
+import Footer from '../Footer/Footer';
 
 class AppContainer extends Component {
 
@@ -18,8 +19,8 @@ class AppContainer extends Component {
         return (
             <div className="App">
                 <Header/>
-                <Menu/>
-                {this.props.children}
+                <Content>{this.props.children}</Content>
+                <Footer/>
             </div>
         );
     }
