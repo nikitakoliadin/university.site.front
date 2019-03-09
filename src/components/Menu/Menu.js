@@ -3,11 +3,11 @@ import {Link} from 'react-router';
 
 const Menu = () => (
     <div>
-        <Link to='/about'>
+        <Link to="/about">
             <b>&nbsp;</b>
             About
         </Link>
-        <Link to='/main'>
+        <Link to="/main">
             <b>&nbsp;</b>
             Main
         </Link>

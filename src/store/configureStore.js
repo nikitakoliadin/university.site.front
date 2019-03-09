@@ -7,9 +7,9 @@ import reducers from '../reducers/reducers';
 
 const configureStore = () => {
     const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk, logger)));
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== "production") {
         if (module.hot) {
-            module.hot.accept('../reducers/reducers', () => {
+            module.hot.accept("../reducers/reducers", () => {
                 store.replaceReducer(reducers);
             });
         }

@@ -24,4 +24,4 @@ const component = (
     </Provider>
 );
 
-ReactDOM.render(component, document.getElementById('root'));
+ReactDOM.render(component, document.getElementById("root"));
