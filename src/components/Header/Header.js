@@ -1,12 +1,19 @@
 import React from 'react';
 
+import Menu from '../Menu/Menu';
+
 const Header = () => (
     <div className="Header">
-        <img className="Header-image" src="./image/header.gif" align="left" alt="gif"/>
-        <span className="Header-text">
-			University App
-		</span>
-        <img className="Header-image" src="./image/header.gif" align="right" alt="gif"/>
+        <div className="Menu">
+            <Menu/>
+        </div>
+        <div className="Logo">
+            <img className="Image" src="./image/header.gif" align="left" alt="gif"/>
+            <span className="Text">
+				University App
+			</span>
+            <img className="Image" src="./image/header.gif" align="right" alt="gif"/>
+        </div>
     </div>
 );
 
