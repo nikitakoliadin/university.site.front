@@ -1,0 +1,7 @@
+.Menu {
+    min-height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1%;
+}
