@@ -35,6 +35,12 @@ const Menu = props => {
                             About
                         </Link>
                     </div>
+                    <div className="Item">
+                        <Link to="/contacts"
+                              onClick={() => closeMenu()}>
+                            Contacts
+                        </Link>
+                    </div>
                     <div className="Logo">
                         <img className="Image" src="./image/header.gif" alt="gif"/>
                     </div>
