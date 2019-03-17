@@ -4,9 +4,7 @@ import MenuContainer from '../Menu/MenuContainer';
 
 const Header = () => (
     <div className="Header">
-        <div className="Menu">
-            <MenuContainer/>
-        </div>
+        <MenuContainer/>
         <div className="Logo">
             <img className="Image" src="./image/header.gif" align="left" alt="gif"/>
             <span className="Text">
