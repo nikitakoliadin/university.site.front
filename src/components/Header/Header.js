@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Menu from '../Menu/Menu';
+import MenuContainer from '../Menu/MenuContainer';
 
 const Header = () => (
     <div className="Header">
         <div className="Menu">
-            <Menu/>
+            <MenuContainer/>
         </div>
         <div className="Logo">
             <img className="Image" src="./image/header.gif" align="left" alt="gif"/>
