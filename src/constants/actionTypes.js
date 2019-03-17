@@ -1,0 +1,2 @@
+export const OPEN_MENU_TYPE = "OPEN_MENU_TYPE";
+export const CLOSE_MENU_TYPE = "CLOSE_MENU_TYPE";
