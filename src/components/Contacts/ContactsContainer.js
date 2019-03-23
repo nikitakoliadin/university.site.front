@@ -1,12 +1,16 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
+import {changeSize} from '../../actions/sizeActions';
 import Contacts from './Contacts';
 
 const ContactsContainer = props => {
-    const {contacts} = props;
+    const {contacts, changeSize} = props;
     return (
-        <Contacts contacts={contacts}/>
+        <Contacts contacts={contacts}
+                  changeSize={changeSize}
+        />
     );
 };
 
@@ -16,4 +20,10 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(ContactsContainer);
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({
+        changeSize: changeSize
+    }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactsContainer);
