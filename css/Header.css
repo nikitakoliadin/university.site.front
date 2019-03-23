@@ -1,0 +1,22 @@
+.Header {
+    min-height: 20vh;
+}
+
+.Header .Logo {
+    min-height: 14vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header .Logo .Image {
+    height: 14vmin;
+}
+
+.Header .Logo .Text {
+    font-family: "Srisakdi", cursive;
+    font-style: italic;
+    font-size: calc(10px + 2vmin);
+    color: black;
+}

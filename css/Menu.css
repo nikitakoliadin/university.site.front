@@ -1,0 +1,50 @@
+.Menu {
+    min-height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1%;
+}
+
+.Menu .List {
+    font-family: "Srisakdi", cursive;
+    font-size: calc(8px + 3vmin);
+    color: black;
+}
+
+.Menu .List .Item {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.Menu .List .Item a {
+    display: block;
+    padding: .7rem 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Menu .List .Item a:hover {
+    text-decoration: none;
+    background-color: #d6d6d6;
+    color: inherit;
+}
+
+.Menu .List .Item a:focus {
+    text-decoration: none;
+}
+
+.Menu .List .Item a:visited {
+    color: inherit;
+}
+
+.Menu .List .Logo {
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu .List .Logo .Image {
+    height: 14vh;
+}

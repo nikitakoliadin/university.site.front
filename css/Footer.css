@@ -1,0 +1,16 @@
+.Footer {
+    min-height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c4c4c4;
+}
+
+.Footer .Text {
+    font-family: BlinkMacSystemFont, serif;
+    font-size: calc(8px + 1vmin);
+    color: black;
+    margin-right: 25px;
+    margin-left: 25px;
+}
