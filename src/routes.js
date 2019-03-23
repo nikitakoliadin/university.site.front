@@ -4,14 +4,14 @@ import {Route, IndexRedirect} from 'react-router';
 import AppContainer from './components/App/AppContainer';
 import Main from './components/Main/Main';
 import About from './components/About/About';
-import Contacts from './components/Contacts/Contacts';
+import ContactsContainer from './components/Contacts/ContactsContainer';
 
 export default (
     <Route path="/" component={AppContainer}>
         <IndexRedirect to="main"/>
         <Route path="/main" component={Main}/>
         <Route path="/about" component={About}/>
-        <Route path="/contacts" component={Contacts}/>
+        <Route path="/contacts" component={ContactsContainer}/>
         <Route path="*" component={Main}/>
     </Route>
 );
