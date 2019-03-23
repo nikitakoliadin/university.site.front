@@ -4,14 +4,17 @@ import RadialMenu from 'react-radial-menu';
 
 class Contacts extends Component {
 
-    componentDidMount() {
+    resize = () => {
         const {changeSize} = this.props;
-        window.addEventListener('resize', () => changeSize());
+        changeSize();
+    };
+
+    componentDidMount() {
+        window.addEventListener('resize', this.resize);
     }
 
     componentWillUnmount() {
-        const {changeSize} = this.props;
-        window.removeEventListener('resize', () => changeSize());
+        window.removeEventListener('resize', this.resize);
     }
 
     render() {
