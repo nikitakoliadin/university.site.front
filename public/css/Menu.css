@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 1%;
+    margin-left: 1vh;
 }
 
 .Menu .List {
@@ -18,7 +18,7 @@
 
 .Menu .List .Item a {
     display: block;
-    padding: .7rem 15px;
+    padding: 2vh;
     text-decoration: none;
     color: inherit;
 }
