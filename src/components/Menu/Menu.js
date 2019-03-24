@@ -42,7 +42,7 @@ const Menu = props => {
                         </Link>
                     </div>
                     <div className="Logo">
-                        <img className="Image" src="./image/header.gif" alt="gif"/>
+                        <img className="Image" src={`${process.env.PUBLIC_URL}/image/header.gif`} alt="gif"/>
                     </div>
                 </div>
             </CheeseburgerMenu>
