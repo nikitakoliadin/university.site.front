@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
     "axios": "^0.18.0",
     "cheeseburger-menu": "^0.0.13",
     "gh-pages": "^2.0.1",
