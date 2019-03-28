@@ -21,14 +21,19 @@ class Contacts extends Component {
         const {contacts} = this.props;
         return (
             <div className="Contacts">
-                <RadialMenu
-                    center={contacts.radialMenu.center}
-                    items={contacts.radialMenu.items}
-                    duration={contacts.radialMenu.duration}
-                    stagger={contacts.radialMenu.stagger}
-                    itemsSize={contacts.radialMenu.itemsSize}
-                    distance={contacts.radialMenu.distance}
-                />
+                <div className="Text">
+                    <span>Thank you for paying attention to my site. All my contacts are listed below in the radial menu.</span>
+                </div>
+                <div className="RadialMenu">
+                    <RadialMenu
+                        center={contacts.radialMenu.center}
+                        items={contacts.radialMenu.items}
+                        duration={contacts.radialMenu.duration}
+                        stagger={contacts.radialMenu.stagger}
+                        itemsSize={contacts.radialMenu.itemsSize}
+                        distance={contacts.radialMenu.distance}
+                    />
+                </div>
             </div>
         );
     }
