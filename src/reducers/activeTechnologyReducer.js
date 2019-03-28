@@ -1,13 +1,19 @@
 import * as types from '../constants/actionTypes';
 
 const initialState = {
-    showTechnology: false,
-    technology: {}
+    technology: {},
+    showTechnology: false
 };
 
 export default function (state = initialState, action) {
     switch (action.type) {
         case types.SELECT_TECHNOLOGY_TYPE: {
+            return {
+                ...state,
+                technology: action.payload
+            };
+        }
+        case types.RESET_TECHNOLOGY_TYPE: {
             return {
                 ...state,
                 technology: action.payload
