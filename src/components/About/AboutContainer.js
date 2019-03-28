@@ -2,15 +2,16 @@ import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {selectTechnology, openTechnology, closeTechnology} from '../../actions/technologyActions';
+import {selectTechnology, resetTechnology, openTechnology, closeTechnology} from '../../actions/technologyActions';
 import About from './About';
 
 const AboutContainer = props => {
-    const {technologies, activeTechnology, selectTechnology, openTechnology, closeTechnology} = props;
+    const {technologies, activeTechnology, selectTechnology, resetTechnology, openTechnology, closeTechnology} = props;
     return (
         <About technologies={technologies}
                activeTechnology={activeTechnology}
                selectTechnology={selectTechnology}
+               resetTechnology={resetTechnology}
                openTechnology={openTechnology}
                closeTechnology={closeTechnology}
         />
@@ -27,6 +28,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
         selectTechnology: selectTechnology,
+        resetTechnology: resetTechnology,
         openTechnology: openTechnology,
         closeTechnology: closeTechnology
     }, dispatch);
