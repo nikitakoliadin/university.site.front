@@ -43,10 +43,9 @@ class About extends Component {
                     </div>
                 </div>
                 <hr/>
-                <br/>
-                <img src={activeTechnology.technology.imageSrc} className="Image" alt="logo"/>
-                <br/>
-                <br/>
+                <div className="Logo">
+                    <img src={activeTechnology.technology.imageSrc} className="Image" alt="logo"/>
+                </div>
             </div>
         );
     }
