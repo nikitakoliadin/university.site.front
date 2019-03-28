@@ -24,7 +24,7 @@ class About extends Component {
     }
 
     showDescription() {
-        const {activeTechnology, closeTechnology} = this.props;
+        const {activeTechnology, closeTechnology, resetTechnology} = this.props;
         return (
             <div className="Description">
                 <hr/>
@@ -34,7 +34,10 @@ class About extends Component {
                     </div>
                     <div className="CloseButton">
                         <Fab aria-label="Add"
-                             onClick={() => closeTechnology()}>
+                             onClick={() => {
+                                 closeTechnology();
+                                 resetTechnology();
+                             }}>
                             <CloseIcon className="CloseLabel"/>
                         </Fab>
                     </div>
@@ -68,6 +71,7 @@ About.propTypes = {
     technologies: PropTypes.array.isRequired,
     activeTechnology: PropTypes.object.isRequired,
     selectTechnology: PropTypes.func.isRequired,
+    resetTechnology: PropTypes.func.isRequired,
     openTechnology: PropTypes.func.isRequired,
     closeTechnology: PropTypes.func.isRequired
 };
