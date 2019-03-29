@@ -28,6 +28,10 @@
 }
 
 .About .Description {
+    min-height: 50vh;
+}
+
+.About .Description .Line {
     margin-right: 3vh;
     margin-left: 3vh;
 }
@@ -38,6 +42,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: 3vh;
+    margin-left: 3vh;
 }
 
 .About .Description .Content .Text {
