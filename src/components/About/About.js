@@ -29,7 +29,7 @@ class About extends Component {
         const {closeTechnology, resetTechnology} = this.props;
         return (
             <div className="Description">
-                <hr/>
+                <hr className="Line"/>
                 <div className="Content">
                     <div className="Text">
                         {activeTechnology.technology.description}
@@ -44,7 +44,7 @@ class About extends Component {
                         </Fab>
                     </div>
                 </div>
-                <hr/>
+                <hr className="Line"/>
                 <div className="Logo">
                     <img src={activeTechnology.technology.imageSrc}
                          className="Image"
