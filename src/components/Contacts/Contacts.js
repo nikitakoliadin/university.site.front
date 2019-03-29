@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import throttle from 'lodash.throttle';
 import RadialMenu from 'react-radial-menu';
 
 class Contacts extends Component {
 
-    resize = () => {
+    resize = throttle(() => {
         const {changeSize} = this.props;
         changeSize();
-    };
+    }, 500);
 
     componentDidMount() {
         window.addEventListener('resize', this.resize);
