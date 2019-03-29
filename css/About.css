@@ -28,6 +28,10 @@
 }
 
 .About .Description {
+    min-height: 50vh;
+}
+
+.About .Description .Line {
     margin-right: 3vh;
     margin-left: 3vh;
 }
@@ -38,6 +42,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: 3vh;
+    margin-left: 3vh;
 }
 
 .About .Description .Content .Text {
@@ -55,7 +61,15 @@
     transform: rotate(45deg);
 }
 
-.About .Description .Image {
+.About .Description .Logo {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .Description .Logo .Image {
     animation: Image-spin infinite 20s linear;
     height: 20vh;
 }
