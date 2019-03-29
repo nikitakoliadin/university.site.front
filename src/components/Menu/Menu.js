@@ -5,7 +5,8 @@ import HamburgerMenu from 'react-hamburger-menu';
 import CheeseburgerMenu from 'cheeseburger-menu';
 
 const Menu = props => {
-    const {menu, openMenu, closeMenu} = props;
+    const {menu} = props;
+    const {openMenu, closeMenu} = props;
     return (
         <div className="Menu">
             <HamburgerMenu
@@ -42,7 +43,9 @@ const Menu = props => {
                         </Link>
                     </div>
                     <div className="Logo">
-                        <img className="Image" src={`${process.env.PUBLIC_URL}/image/header.gif`} alt="gif"/>
+                        <img className="Image"
+                             src={`${process.env.PUBLIC_URL}/image/header.gif`}
+                             alt="gif"/>
                     </div>
                 </div>
             </CheeseburgerMenu>

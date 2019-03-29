@@ -6,7 +6,8 @@ import {changeSize} from '../../actions/sizeActions';
 import Contacts from './Contacts';
 
 const ContactsContainer = props => {
-    const {contacts, changeSize} = props;
+    const {contacts} = props;
+    const {changeSize} = props;
     return (
         <Contacts contacts={contacts}
                   changeSize={changeSize}

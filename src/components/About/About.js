@@ -7,7 +7,8 @@ import CloseIcon from '@material-ui/icons/Add';
 class About extends Component {
 
     showListOfTechnologies() {
-        const {technologies, selectTechnology, openTechnology} = this.props;
+        const {technologies} = this.props;
+        const {selectTechnology, openTechnology} = this.props;
         return technologies.map((technology) => {
             return (
                 <Button key={technology.id}
@@ -24,13 +25,14 @@ class About extends Component {
     }
 
     showDescription() {
-        const {activeTechnology, closeTechnology, resetTechnology} = this.props;
+        const {activeTechnology} = this.props;
+        const {closeTechnology, resetTechnology} = this.props;
         return (
             <div className="Description">
                 <hr/>
                 <div className="Content">
                     <div className="Text">
-                        <div>{activeTechnology.technology.description}</div>
+                        {activeTechnology.technology.description}
                     </div>
                     <div className="CloseButton">
                         <Fab aria-label="Add"
@@ -44,7 +46,9 @@ class About extends Component {
                 </div>
                 <hr/>
                 <div className="Logo">
-                    <img src={activeTechnology.technology.imageSrc} className="Image" alt="logo"/>
+                    <img src={activeTechnology.technology.imageSrc}
+                         className="Image"
+                         alt="logo"/>
                 </div>
             </div>
         );

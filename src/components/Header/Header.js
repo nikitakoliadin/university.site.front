@@ -6,11 +6,17 @@ const Header = () => (
     <div className="Header">
         <MenuContainer/>
         <div className="Logo">
-            <img className="Image" src={`${process.env.PUBLIC_URL}/image/header.gif`} align="left" alt="gif"/>
+            <img className="Image"
+                 src={`${process.env.PUBLIC_URL}/image/header.gif`}
+                 align="left"
+                 alt="gif"/>
             <span className="Text">
 				University App
 			</span>
-            <img className="Image" src={`${process.env.PUBLIC_URL}/image/header.gif`} align="right" alt="gif"/>
+            <img className="Image"
+                 src={`${process.env.PUBLIC_URL}/image/header.gif`}
+                 align="right"
+                 alt="gif"/>
         </div>
     </div>
 );

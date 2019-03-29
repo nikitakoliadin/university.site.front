@@ -6,7 +6,8 @@ import {selectTechnology, resetTechnology, openTechnology, closeTechnology} from
 import About from './About';
 
 const AboutContainer = props => {
-    const {technologies, activeTechnology, selectTechnology, resetTechnology, openTechnology, closeTechnology} = props;
+    const {technologies, activeTechnology} = props;
+    const {selectTechnology, resetTechnology, openTechnology, closeTechnology} = props;
     return (
         <About technologies={technologies}
                activeTechnology={activeTechnology}

@@ -19,7 +19,9 @@ class AppContainer extends Component {
         return (
             <div className="App">
                 <Header/>
-                <Content>{this.props.children}</Content>
+                <Content>
+                    {this.props.children}
+                </Content>
                 <Footer/>
             </div>
         );

@@ -22,7 +22,7 @@ class Contacts extends Component {
         return (
             <div className="Contacts">
                 <div className="Text">
-                    <span>Thank you for paying attention to my site. All my contacts are listed below in the radial menu.</span>
+                    Thank you for paying attention to my site. All my contacts are listed below in the radial menu.
                 </div>
                 <div className="RadialMenu">
                     <RadialMenu

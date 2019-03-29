@@ -6,7 +6,8 @@ import {openMenu, closeMenu} from '../../actions/menuActions';
 import Menu from './Menu';
 
 const MenuContainer = props => {
-    const {menu, openMenu, closeMenu} = props;
+    const {menu} = props;
+    const {openMenu, closeMenu} = props;
     return (
         <Menu menu={menu}
               openMenu={openMenu}
