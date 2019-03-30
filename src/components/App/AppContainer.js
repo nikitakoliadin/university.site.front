@@ -16,8 +16,10 @@ class AppContainer extends Component {
     }
 
     render() {
+        const {styles} = this.props;
         return (
-            <div className="App">
+            <div className="App"
+                 style={styles.lastWayStyle}>
                 <Header/>
                 <Content>
                     {this.props.children}
@@ -39,7 +41,8 @@ AppContainer.childContextTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        ownProps: ownProps
+        ownProps: ownProps,
+        styles: state.styles
     };
 }
 
