@@ -10,8 +10,8 @@
     font-size: calc(8px + 2vmin);
     color: black;
     margin-top: 3vh;
-    margin-right: 3vh;
-    margin-left: 3vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
 }
 
 .About .SelectButtons {
@@ -23,8 +23,8 @@
     font-style: italic;
     font-size: calc(8px + 1vmin);
     color: black;
-    margin-right: 1vh;
-    margin-left: 1vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 
 .About .Description {
@@ -32,8 +32,8 @@
 }
 
 .About .Description .Line {
-    margin-right: 3vh;
-    margin-left: 3vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
 }
 
 .About .Description .Content {
@@ -42,8 +42,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 3vh;
-    margin-left: 3vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
 }
 
 .About .Description .Content .Text {
