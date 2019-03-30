@@ -22,9 +22,9 @@ class Contacts extends Component {
         const {contacts} = this.props;
         return (
             <div className="Contacts">
-                <div className="Text">
+                <span className="Text">
                     Thank you for paying attention to my site. All my contacts are listed below in the radial menu.
-                </div>
+                </span>
                 <div className="RadialMenu">
                     <RadialMenu
                         center={contacts.radialMenu.center}
