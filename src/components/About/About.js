@@ -31,9 +31,9 @@ class About extends Component {
             <div className="Description">
                 <hr className="Line"/>
                 <div className="Content">
-                    <div className="Text">
+                    <span className="Text">
                         {activeTechnology.technology.description}
-                    </div>
+                    </span>
                     <div className="CloseButton">
                         <Fab aria-label="Add"
                              onClick={() => {
@@ -58,9 +58,9 @@ class About extends Component {
         const {activeTechnology} = this.props;
         return (
             <div className="About">
-                <div className="HeadText">
+                <span className="HeadText">
                     This application is based on React.js and Redux.js. See description below.
-                </div>
+                </span>
                 <div className="SelectButtons">
                     {this.showListOfTechnologies()}
                 </div>
