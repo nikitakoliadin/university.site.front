@@ -22,7 +22,8 @@ const Menu = props => {
             />
             <CheeseburgerMenu
                 isOpen={menu.showMenu}
-                closeCallback={() => closeMenu()}>
+                closeCallback={() => closeMenu()}
+                backgroundColor="#eaeaea">
                 <div className="List">
                     <div className="Item">
                         <Link to="/main"
