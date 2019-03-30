@@ -4,12 +4,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: #c4c4c4;
 }
 
 .Footer .Text {
     font-family: BlinkMacSystemFont, serif;
     font-size: calc(8px + 1vmin);
-    color: white;
+    color: black;
     margin-right: 3vh;
     margin-left: 3vh;
 }

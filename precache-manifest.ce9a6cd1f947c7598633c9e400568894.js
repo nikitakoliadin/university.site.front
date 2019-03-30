@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/university.site.front/static/js/main.00451538.chunk.js"
   },
   {
-    "revision": "9a7e6d2d64af2d7b623f",
-    "url": "/university.site.front/static/js/2.54f41cce.chunk.js"
+    "revision": "5cf47ca4a6081d497ec1",
+    "url": "/university.site.front/static/js/2.023c0c73.chunk.js"
   },
   {
-    "revision": "9a7e6d2d64af2d7b623f",
+    "revision": "5cf47ca4a6081d497ec1",
     "url": "/university.site.front/static/css/2.0b3244c7.chunk.css"
   },
   {
-    "revision": "f8ad62df1bed5b6e07b5344109d6aff7",
+    "revision": "25af46a8cc0496fade65d947ae515160",
     "url": "/university.site.front/index.html"
   }
 ];
