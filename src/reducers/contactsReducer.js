@@ -1,12 +1,12 @@
 function getItemsSize() {
-    if (window.innerHeight / window.innerWidth > 1) {
-        return window.innerWidth / 10;
-    } else {
-        return window.innerHeight / 10;
-    }
+    return getSize();
 }
 
 function getDistance() {
+    return getSize();
+}
+
+function getSize() {
     if (window.innerHeight / window.innerWidth > 1) {
         return window.innerWidth / 10;
     } else {
