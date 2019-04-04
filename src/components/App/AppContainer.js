@@ -1,12 +1,28 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import throttle from 'lodash.throttle';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
+import {changeSize} from '../../actions/sizeActions';
 import Header from '../Header/Header';
 import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
 
 class AppContainer extends Component {
+
+    resize = throttle(() => {
+        const {changeSize} = this.props;
+        changeSize();
+    }, 500);
+
+    componentDidMount() {
+        window.addEventListener('resize', this.resize);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resize);
+    }
 
     getChildContext() {
         return {
@@ -46,4 +62,10 @@ function mapStateToProps(state, ownProps) {
     };
 }
 
-export default connect(mapStateToProps)(AppContainer);
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({
+        changeSize: changeSize
+    }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AppContainer);
