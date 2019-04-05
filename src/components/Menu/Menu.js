@@ -25,23 +25,25 @@ const Menu = props => {
                 closeCallback={() => closeMenu()}
                 backgroundColor={menuComponent.cheeseburgerMenu.backgroundColor}>
                 <div className="List">
-                    <div className="Item">
-                        <Link to="/main"
-                              onClick={() => closeMenu()}>
-                            Main
-                        </Link>
-                    </div>
-                    <div className="Item">
-                        <Link to="/about"
-                              onClick={() => closeMenu()}>
-                            About
-                        </Link>
-                    </div>
-                    <div className="Item">
-                        <Link to="/contacts"
-                              onClick={() => closeMenu()}>
-                            Contacts
-                        </Link>
+                    <div className="Items">
+                        <div className="Item">
+                            <Link to="/main"
+                                  onClick={() => closeMenu()}>
+                                Main
+                            </Link>
+                        </div>
+                        <div className="Item">
+                            <Link to="/about"
+                                  onClick={() => closeMenu()}>
+                                About
+                            </Link>
+                        </div>
+                        <div className="Item">
+                            <Link to="/contacts"
+                                  onClick={() => closeMenu()}>
+                                Contacts
+                            </Link>
+                        </div>
                     </div>
                     <div className="Logo">
                         <img className="Image"
