@@ -6,6 +6,7 @@ import technologiesReducer from './technologiesReducer';
 import activeTechnologyReducer from './activeTechnologyReducer.js';
 import contactsComponentReducer from './contactsComponentReducer';
 import stylesReducer from './stylesReducer';
+import menuComponentReducer from './menuComponentReducer';
 
 const reducers = combineReducers({
     routing: routerReducer,
@@ -13,7 +14,8 @@ const reducers = combineReducers({
     technologies: technologiesReducer,
     activeTechnology: activeTechnologyReducer,
     contactsComponent: contactsComponentReducer,
-    styles: stylesReducer
+    styles: stylesReducer,
+    menuComponent: menuComponentReducer
 });
 
 export default reducers;
