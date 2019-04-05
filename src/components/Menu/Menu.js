@@ -5,25 +5,25 @@ import HamburgerMenu from 'react-hamburger-menu';
 import CheeseburgerMenu from 'cheeseburger-menu';
 
 const Menu = props => {
-    const {menu} = props;
+    const {menu, menuComponent} = props;
     const {openMenu, closeMenu} = props;
     return (
         <div className="Menu">
             <HamburgerMenu
                 isOpen={menu.showMenu}
                 menuClicked={() => openMenu()}
-                width={32}
-                height={24}
-                strokeWidth={3}
-                rotate={0}
-                color="black"
-                borderRadius={0}
-                animationDuration={0.5}
+                width={menuComponent.hamburgerMenu.width}
+                height={menuComponent.hamburgerMenu.height}
+                strokeWidth={menuComponent.hamburgerMenu.strokeWidth}
+                rotate={menuComponent.hamburgerMenu.rotate}
+                color={menuComponent.hamburgerMenu.color}
+                borderRadius={menuComponent.hamburgerMenu.borderRadius}
+                animationDuration={menuComponent.hamburgerMenu.animationDuration}
             />
             <CheeseburgerMenu
                 isOpen={menu.showMenu}
                 closeCallback={() => closeMenu()}
-                backgroundColor="#eaeaea">
+                backgroundColor={menuComponent.cheeseburgerMenu.backgroundColor}>
                 <div className="List">
                     <div className="Item">
                         <Link to="/main"
@@ -56,6 +56,7 @@ const Menu = props => {
 
 Menu.propTypes = {
     menu: PropTypes.object.isRequired,
+    menuComponent: PropTypes.object.isRequired,
     openMenu: PropTypes.func.isRequired,
     closeMenu: PropTypes.func.isRequired
 };
