@@ -7,38 +7,45 @@
 }
 
 .Menu .List {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Menu .List .Items {
     font-family: "Srisakdi", cursive;
     font-size: calc(8px + 3vmin);
     color: black;
 }
 
-.Menu .List .Item {
+.Menu .List .Items .Item {
     border-bottom: 1px solid #d6d6d6;
 }
 
-.Menu .List .Item a {
+.Menu .List .Items .Item a {
     display: block;
     padding: 2vh;
     text-decoration: none;
     color: inherit;
 }
 
-.Menu .List .Item a:hover {
+.Menu .List .Items .Item a:hover {
     text-decoration: none;
     background-color: #d6d6d6;
     color: inherit;
 }
 
-.Menu .List .Item a:focus {
+.Menu .List .Items .Item a:focus {
     text-decoration: none;
 }
 
-.Menu .List .Item a:visited {
+.Menu .List .Items .Item a:visited {
     color: inherit;
 }
 
 .Menu .List .Logo {
-    min-height: 8vh;
+    min-height: 25vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,5 +53,5 @@
 }
 
 .Menu .List .Logo .Image {
-    height: 14vh;
+    height: 15vh;
 }
