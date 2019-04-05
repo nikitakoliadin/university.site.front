@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import RadialMenu from 'react-radial-menu';
 
 const Contacts = props => {
-    const {contacts} = props;
+    const {contactsComponent} = props;
     return (
         <div className="Contacts">
                 <span className="Text">
@@ -11,12 +11,12 @@ const Contacts = props => {
                 </span>
             <div className="RadialMenu">
                 <RadialMenu
-                    center={contacts.radialMenu.center}
-                    items={contacts.radialMenu.items}
-                    duration={contacts.radialMenu.duration}
-                    stagger={contacts.radialMenu.stagger}
-                    itemsSize={contacts.radialMenu.itemsSize}
-                    distance={contacts.radialMenu.distance}
+                    center={contactsComponent.radialMenu.center}
+                    items={contactsComponent.radialMenu.items}
+                    duration={contactsComponent.radialMenu.duration}
+                    stagger={contactsComponent.radialMenu.stagger}
+                    itemsSize={contactsComponent.radialMenu.itemsSize}
+                    distance={contactsComponent.radialMenu.distance}
                 />
             </div>
         </div>
@@ -24,7 +24,7 @@ const Contacts = props => {
 };
 
 Contacts.propTypes = {
-    contacts: PropTypes.object.isRequired,
+    contactsComponent: PropTypes.object.isRequired,
 };
 
 export default Contacts;
