@@ -4,15 +4,15 @@ import {connect} from 'react-redux';
 import Contacts from './Contacts';
 
 const ContactsContainer = props => {
-    const {contacts} = props;
+    const {contactsComponent} = props;
     return (
-        <Contacts contacts={contacts}/>
+        <Contacts contactsComponent={contactsComponent}/>
     );
 };
 
 function mapStateToProps(state) {
     return {
-        contacts: state.contacts
+        contactsComponent: state.contactsComponent
     };
 }
 
