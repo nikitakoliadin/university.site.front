@@ -1,5 +1,6 @@
 import React from 'react';
 
+import localization from '../../localization/localization';
 import MenuContainer from '../Menu/MenuContainer';
 
 const Header = () => (
@@ -11,7 +12,7 @@ const Header = () => (
                  align="left"
                  alt="gif"/>
             <span className="Text">
-				University App
+                {localization.header1}
 			</span>
             <img className="Image"
                  src={`${process.env.PUBLIC_URL}/image/header.gif`}

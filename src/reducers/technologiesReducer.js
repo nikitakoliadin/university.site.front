@@ -1,23 +1,18 @@
+import localization from '../localization/localization';
+
 export default function () {
     return [
         {
             id: 1,
-            name: "React",
+            name: localization.about2,
             imageSrc: `${process.env.PUBLIC_URL}/image/react.svg`,
-            description: "In computing, React (also known as React.js or ReactJS) is a JavaScript library for " +
-                "building user interfaces. It is maintained by Facebook and a community of individual developers " +
-                "and companies. React can be used as a base in the development of single-page or mobile " +
-                "applications. Complex React applications usually require the use of additional libraries for " +
-                "state management, routing, and interaction with an API."
+            description: localization.about3
         },
         {
             id: 2,
-            name: "Redux",
+            name: localization.about4,
             imageSrc: `${process.env.PUBLIC_URL}/image/redux.svg`,
-            description: "Redux is an open-source JavaScript library for managing application state. " +
-                "It is most commonly used with libraries such as React or Angular for building user interfaces. " +
-                "Similar to (and inspired by) Facebook's Flux architecture, it was created by " +
-                "Dan Abramov and Andrew Clark."
+            description: localization.about5
         }
     ];
 };

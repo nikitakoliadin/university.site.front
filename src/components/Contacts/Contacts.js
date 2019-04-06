@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RadialMenu from 'react-radial-menu';
 
+import localization from '../../localization/localization';
+
 const Contacts = props => {
     const {contactsComponent} = props;
     return (
         <div className="Contacts">
                 <span className="Text">
-                    Thank you for paying attention to my site. All my contacts are listed below in the radial menu.
+                    {localization.contacts1}
                 </span>
             <div className="RadialMenu">
                 <RadialMenu

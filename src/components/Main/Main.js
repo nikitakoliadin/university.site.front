@@ -1,11 +1,11 @@
 import React from 'react';
 
+import localization from '../../localization/localization';
+
 const Main = () => (
     <div className="Main">
         <span className="Text">
-            Never be afraid of losing people just
-            because you are afraid to be alone. You
-            are always alone.
+            {localization.main1}
         </span>
     </div>
 );

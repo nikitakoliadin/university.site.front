@@ -4,6 +4,8 @@ import {Link} from 'react-router';
 import HamburgerMenu from 'react-hamburger-menu';
 import CheeseburgerMenu from 'cheeseburger-menu';
 
+import localization from '../../localization/localization';
+
 const Menu = props => {
     const {menu, menuComponent} = props;
     const {openMenu, closeMenu} = props;
@@ -29,19 +31,19 @@ const Menu = props => {
                         <div className="Item">
                             <Link to="/main"
                                   onClick={() => closeMenu()}>
-                                Main
+                                {localization.menu1}
                             </Link>
                         </div>
                         <div className="Item">
                             <Link to="/about"
                                   onClick={() => closeMenu()}>
-                                About
+                                {localization.menu2}
                             </Link>
                         </div>
                         <div className="Item">
                             <Link to="/contacts"
                                   onClick={() => closeMenu()}>
-                                Contacts
+                                {localization.menu3}
                             </Link>
                         </div>
                     </div>

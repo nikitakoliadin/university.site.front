@@ -4,6 +4,8 @@ import Button from '@material-ui/core/Button';
 import Fab from '@material-ui/core/Fab';
 import CloseIcon from '@material-ui/icons/Add';
 
+import localization from '../../localization/localization';
+
 class About extends Component {
 
     showListOfTechnologies() {
@@ -59,7 +61,7 @@ class About extends Component {
         return (
             <div className="About">
                 <span className="HeadText">
-                    This application is based on React.js and Redux.js. See description below.
+                    {localization.about1}
                 </span>
                 <div className="SelectButtons">
                     {this.showListOfTechnologies()}

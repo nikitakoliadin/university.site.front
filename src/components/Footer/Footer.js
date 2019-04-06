@@ -1,12 +1,14 @@
 import React from 'react';
 
+import localization from '../../localization/localization';
+
 const Footer = () => (
     <div className="Footer">
         <span className="Text">
-            University App
+            {localization.footer1}
         </span>
         <span className="Text">
-            © qThegamEp, 2019
+            {localization.footer2}
         </span>
     </div>
 );
