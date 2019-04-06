@@ -6,7 +6,7 @@
 }
 
 .About .HeadText {
-    font-family: BlinkMacSystemFont, serif;
+    font-family: -apple-system, BlinkMacSystemFont, serif;
     font-size: calc(8px + 2vmin);
     color: black;
     margin-top: 3vh;
@@ -47,7 +47,7 @@
 }
 
 .About .Description .Content .Text {
-    font-family: BlinkMacSystemFont, serif;
+    font-family: -apple-system, BlinkMacSystemFont, serif;
     font-style: italic;
     font-size: calc(8px + 2vmin);
     color: black;

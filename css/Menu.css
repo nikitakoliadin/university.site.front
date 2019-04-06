@@ -14,7 +14,8 @@
 }
 
 .Menu .List .Items {
-    font-family: "Srisakdi", cursive;
+    font-family: -apple-system, BlinkMacSystemFont, "Srisakdi", "Bad Script", cursive;
+    font-style: italic;
     font-size: calc(8px + 3vmin);
     color: black;
 }

@@ -10,7 +10,7 @@
     justify-content: center;
     margin-right: 3vw;
     margin-left: 3vw;
-    font-family: BlinkMacSystemFont, serif;
+    font-family: -apple-system, BlinkMacSystemFont, serif;
     font-style: italic;
     font-size: calc(8px + 2vmin);
     color: black;

@@ -7,7 +7,7 @@
 }
 
 .Footer .Text {
-    font-family: BlinkMacSystemFont, serif;
+    font-family: -apple-system, BlinkMacSystemFont, serif;
     font-size: calc(8px + 1vmin);
     color: white;
     margin-right: 3vw;
