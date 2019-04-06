@@ -15,7 +15,7 @@
 }
 
 .Header .Logo .Text {
-    font-family: "Srisakdi", cursive;
+    font-family: -apple-system, BlinkMacSystemFont, "Srisakdi", cursive;
     font-style: italic;
     font-size: calc(10px + 3vmin);
     color: black;
