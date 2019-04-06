@@ -2,6 +2,15 @@
     min-height: 20vh;
 }
 
+.Header .Buttons {
+    min-height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 .Header .Logo {
     min-height: 14vh;
     display: flex;
