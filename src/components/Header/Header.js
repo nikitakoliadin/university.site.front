@@ -2,10 +2,14 @@ import React from 'react';
 
 import localization from '../../localization/localization';
 import MenuContainer from '../Menu/MenuContainer';
+import LanguageContainer from '../Language/LanguageContainer';
 
 const Header = () => (
     <div className="Header">
-        <MenuContainer/>
+        <div className="Buttons">
+            <MenuContainer/>
+            <LanguageContainer/>
+        </div>
         <div className="Logo">
             <img className="Image"
                  src={`${process.env.PUBLIC_URL}/image/header.gif`}
