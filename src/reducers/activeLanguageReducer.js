@@ -1,7 +1,10 @@
 import * as types from '../constants/actionTypes';
 
 const initialState = {
-    language: {}
+    language: {
+        id: 1,
+        name: "en"
+    }
 };
 
 export default function (state = initialState, action) {
