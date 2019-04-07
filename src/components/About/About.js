@@ -11,7 +11,7 @@ class About extends Component {
     componentWillUpdate(nextProps, nextState, nextContext) {
         const {activeLanguage, activeTechnology} = this.props;
         const {selectTechnology} = this.props;
-        if (nextProps.activeLanguage.language.id !== activeLanguage.language.id) {
+        if (activeTechnology.showTechnology && (nextProps.activeLanguage.language.id !== activeLanguage.language.id)) {
             const updatedTechnology = nextProps.technologies[activeTechnology.technology.id - 1];
             selectTechnology(updatedTechnology);
         }
