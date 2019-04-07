@@ -11,7 +11,9 @@ const configureStore = () => {
     const persistedState = loadState();
     const store = createStore(reducers, persistedState, composeWithDevTools(applyMiddleware(thunk, logger)));
     store.subscribe(throttle(() => {
-        saveState({});
+        saveState({
+            activeLanguage: store.getState().activeLanguage
+        });
     }, 1000));
     if (process.env.NODE_ENV !== "production") {
         if (module.hot) {
