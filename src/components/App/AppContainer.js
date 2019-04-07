@@ -5,6 +5,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import {changeSize} from '../../actions/sizeActions';
+import {selectDefaultLanguage} from '../../actions/languageActions';
 import Header from '../Header/Header';
 import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
@@ -16,7 +17,14 @@ class AppContainer extends Component {
         changeSize();
     }, 500);
 
+    handleStartLanguage = () => {
+        const {activeLanguage} = this.props;
+        const {selectDefaultLanguage} = this.props;
+        selectDefaultLanguage(activeLanguage.language);
+    };
+
     componentDidMount() {
+        this.handleStartLanguage();
         window.addEventListener('resize', this.resize);
     }
 
@@ -58,13 +66,15 @@ AppContainer.childContextTypes = {
 function mapStateToProps(state, ownProps) {
     return {
         ownProps: ownProps,
-        styles: state.styles
+        styles: state.styles,
+        activeLanguage: state.activeLanguage
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
-        changeSize: changeSize
+        changeSize: changeSize,
+        selectDefaultLanguage: selectDefaultLanguage
     }, dispatch);
 }
 
