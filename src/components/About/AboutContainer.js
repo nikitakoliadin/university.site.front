@@ -6,11 +6,12 @@ import {selectTechnology, resetTechnology, openTechnology, closeTechnology} from
 import About from './About';
 
 const AboutContainer = props => {
-    const {technologies, activeTechnology} = props;
+    const {technologies, activeTechnology, activeLanguage} = props;
     const {selectTechnology, resetTechnology, openTechnology, closeTechnology} = props;
     return (
         <About technologies={technologies}
                activeTechnology={activeTechnology}
+               activeLanguage={activeLanguage}
                selectTechnology={selectTechnology}
                resetTechnology={resetTechnology}
                openTechnology={openTechnology}
@@ -22,7 +23,8 @@ const AboutContainer = props => {
 function mapStateToProps(state) {
     return {
         technologies: state.technologies,
-        activeTechnology: state.activeTechnology
+        activeTechnology: state.activeTechnology,
+        activeLanguage: state.activeLanguage
     };
 }
 
