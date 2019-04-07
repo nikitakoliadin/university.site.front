@@ -8,6 +8,15 @@ import localization from '../../localization/localization';
 
 class About extends Component {
 
+    componentWillUpdate(nextProps, nextState, nextContext) {
+        const {activeLanguage, activeTechnology} = this.props;
+        const {selectTechnology} = this.props;
+        if (nextProps.activeLanguage.language.id !== activeLanguage.language.id) {
+            const updatedTechnology = nextProps.technologies[activeTechnology.technology.id - 1];
+            selectTechnology(updatedTechnology);
+        }
+    }
+
     showListOfTechnologies() {
         const {technologies} = this.props;
         const {selectTechnology, openTechnology} = this.props;
@@ -75,6 +84,7 @@ class About extends Component {
 About.propTypes = {
     technologies: PropTypes.array.isRequired,
     activeTechnology: PropTypes.object.isRequired,
+    activeLanguage: PropTypes.object.isRequired,
     selectTechnology: PropTypes.func.isRequired,
     resetTechnology: PropTypes.func.isRequired,
     openTechnology: PropTypes.func.isRequired,
